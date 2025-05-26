@@ -991,7 +991,7 @@ void RR(Process *p_o, int num, int q) {
     printf("==================결과===================\n");
     Sort_PID(p, num);
     printf("PID\tArr\tEnd\tTurn\tWait\n");
-    //waiting time, turn around time 설정1
+    //waiting time, turn around time 설정
     for(int i = 0; i<num; i++) {
         p[i].turnaround_time = p[i].end_time - p[i].arrival_time;
         total_turn += p[i].turnaround_time;
